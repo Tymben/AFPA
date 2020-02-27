@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Remplir un formulaire</title>
+        </head>
+    <body>
+    <br>
+    <!--Nom + Prénom-->
+        <form action="destination.php" method="post">
+            <input type="text" name="nom" size="50" maxlenght="50" placeholder="NOM">
+            <input type="text" name="prénom" size="50" maxlenght="50" placeholder="Prénom">
+            <input type="submit" value="Envoyer">
+            </form>
+    <br>
+        <label for="nom">Nom :</label><input type="text" name="nom" id="nom">
+    <br>
+    <br>
+    <!--Texte déroulant-->
+        <textarea name="commentaire" rows="10" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis quis metus ornare semper. In vitae lacus ex. In elementum iaculis malesuada. Maecenas vulputate, erat id molestie dictum, diam dolor faucibus nisl, in pharetra sapien libero eget risus. Morbi vehicula aliquam placerat. Suspendisse mollis tempus dictum. Nullam suscipit nec massa eget viverra. Etiam feugiat facilisis est nec euismod. Quisque convallis, tortor sed placerat lacinia, elit nunc volutpat arcu, vel consequat velit libero at tortor. Suspendisse interdum lacus non felis bibendum facilisis. In sit amet enim mauris.</textarea>
+    <!--Cases à cocher-->        
+            <input type="checkbox" name="couleur1" value="Bleu" checked>
+            <input type="checkbox" name="couleur2" value="Rouge">
+            <input type="checkbox" name="couleur3" value="Vert">
+    <br>
+    <br>
+        <select name="couleur">
+            <option>Bleu</option>
+            <option>Rouge</option>
+            <option>Vert</option>
+        </select>
+    <br>
+    <br>
+    <!--Pièce jointe-->
+        <form action="destination.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fichier" accept="image/png">
+        </form>
+    <br>
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <label for="nom">Nom:</label><input type="text" name="nom" id="?"><br>
+            <label for="?">Email:</label><input type="email" name="email"><br>
+            <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+        </fieldset>
+    <br>
+        <label for="metiers2">Sélectionnez votre métier</label>
+        <input type="text" name="metiers1" id="metiers2" list="metiers3">
+        <datalist id="metiers3">
+            <option value="webmaster">
+            <option value="développeur">
+            <option value="administrateur B.D.D">
+            <option value="webdesigner">
+        </datalist>
+
+
+        
+    </body>
+</html>
