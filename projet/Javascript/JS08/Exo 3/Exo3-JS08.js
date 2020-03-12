@@ -55,10 +55,10 @@ switch (menu) {
     case "4":
         var mot = prompt("Saisir un mot");
         var lettre;
-        function case4(lettre,mot) {
+        function case4(lettre, mot) {
             mot2 = mot.split(lettre);
-            total = mot2.length-1;
+            total = mot2.length - 1;
             return total;
-        } 
+        }
         alert(case4("", mot))
-    }
+}
